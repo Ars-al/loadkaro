@@ -16,7 +16,7 @@ class IndexController extends Controller
 
     // private function getDistances($origin, $destination)
     // {
-    //     $google_api_key = 'AIzaSyCoWgaHxzX0Z5NyrOQO_ST4gr1u9fzEcIw';
+    //     $google_api_key = 'API_KEY';
 
     //     $response = Http::get('https://maps.googleapis.com/maps/api/distancematrix/json', [
     //         'origins' => urlencode($origin),
@@ -88,7 +88,7 @@ class IndexController extends Controller
 
     private function getDistances($origin, $destination)
     {
-        $google_api_key = 'AIzaSyCoWgaHxzX0Z5NyrOQO_ST4gr1u9fzEcIw';
+        $google_api_key = 'API_KEY';
 
         $response = Http::get('https://maps.googleapis.com/maps/api/distancematrix/json', [
             'origins' => urlencode($origin),
@@ -152,7 +152,7 @@ class IndexController extends Controller
     // {
     //     $response = Http::get('https://maps.googleapis.com/maps/api/geocode/json', [
     //         'address' => $pincode,
-    //         'key' => 'AIzaSyCoWgaHxzX0Z5NyrOQO_ST4gr1u9fzEcIw',
+    //         'key' => 'API_KEY',
     //     ]);
 
     //     if ($response->successful() && isset($response['results']) && count($response['results']) > 0) {
@@ -207,7 +207,7 @@ class IndexController extends Controller
     // {
     //     $response = Http::get('https://maps.googleapis.com/maps/api/geocode/json', [
     //         'address' => $pincode,
-    //         'key' => 'AIzaSyCoWgaHxzX0Z5NyrOQO_ST4gr1u9fzEcIw',
+    //         'key' => 'API_KEY',
     //     ]);
 
     //     if ($response->successful() && isset($response['results']) && count($response['results']) > 0) {
